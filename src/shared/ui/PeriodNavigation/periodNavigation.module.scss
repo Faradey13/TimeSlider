@@ -1,0 +1,13 @@
+.navArrow {
+  display: flex;
+  gap: 20px;
+}
+.disabled {
+  stroke-opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .navArrow {
+    gap: 8px;
+  }
+}

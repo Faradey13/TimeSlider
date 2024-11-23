@@ -1,0 +1,80 @@
+.slider {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .customPrev,
+  .customNext {
+    &.animated {
+      opacity: 0 !important;
+      transition: opacity 0.3s ease;
+    }
+  }
+  .hidden {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .container {
+    width: 1200px;
+    height: 135px;
+    margin: 0 auto;
+    flex-direction: row;
+
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+    &.animated {
+      opacity: 0 !important;
+    }
+  }
+
+  .slide {
+    position: relative;
+    width: 320px !important;
+    height: 100% !important;
+    align-items: center;
+    text-align: start;
+    padding: 10px;
+    cursor: grab;
+
+    .year {
+      font-size: 25px;
+      font-family: 'Bebas-neue', sans-serif;
+      color: #3877ee;
+    }
+
+    .description {
+      font-size: 20px;
+      color: #42567a;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      max-width: 90vw;
+      margin-top: 20px;
+      padding: 0;
+    }
+
+    .slide {
+      max-width: 300px;
+
+
+      .year {
+        font-size: 16px;
+      }
+
+      .description {
+        font-size: 14px;
+        line-height: 1.45;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+
+

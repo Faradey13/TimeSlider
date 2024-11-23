@@ -1,0 +1,21 @@
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #E5E5E5;
+  width: 100vw;
+  height: 1080px;
+  overflow-x: hidden;
+  font-family: 'PT Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Bebas-neue';
+  src: url("../../shared/assets/fonts/BebasNeue-Regular.ttf");
+}
